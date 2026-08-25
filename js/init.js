@@ -16,19 +16,29 @@
       var el = document.querySelector('.sidenav');
       var inst = (window.M && M.Sidenav) ? M.Sidenav.getInstance(el) : null;
       if (inst) { inst.close(); }
-      // wait for the close animation to release the body scroll-lock, then scroll
-      setTimeout(function(){
-        document.body.style.overflow = '';           // ensure scrolling is unlocked
-        var y = target.getBoundingClientRect().top + window.pageYOffset - NAV_H;
-        // CSS scroll-behavior:smooth breaks JS scrollTo on iOS/WebKit, so
-        // disable it for this jump, then restore it.
-        var html = document.documentElement;
-        var prev = html.style.scrollBehavior;
-        html.style.scrollBehavior = 'auto';
-        window.scrollTo(0, y);
-        html.style.scrollBehavior = prev;
-      }, 300);
+      // Wait for the close animation to release the body scroll-lock, then
+      // scroll. Run it twice: if the lock was still active on the first pass
+      // (slower devices), the second pass lands it. Recomputing y each time
+      // makes this idempotent, so a successful first jump isn't disturbed.
+      setTimeout(function(){ jumpTo(target); }, 320);
+      setTimeout(function(){ jumpTo(target); }, 520);
     });
+
+    function jumpTo(target){
+      document.body.style.overflow = '';             // release Materialize's lock
+      var html = document.documentElement;
+      // CSS scroll-behavior:smooth breaks JS scrolling on iOS/WebKit, so
+      // disable it for this jump, then restore it.
+      var prev = html.style.scrollBehavior;
+      html.style.scrollBehavior = 'auto';
+      var y = target.getBoundingClientRect().top + window.pageYOffset - NAV_H;
+      window.scrollTo(0, y);
+      if (Math.abs(window.pageYOffset - y) > 2) {    // fallbacks for older WebKit
+        html.scrollTop = y;
+        document.body.scrollTop = y;
+      }
+      html.style.scrollBehavior = prev;
+    }
 
     // FAQ accordion
     $('.collapsible').collapsible();
