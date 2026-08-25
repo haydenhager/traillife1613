@@ -116,13 +116,15 @@ nav.site-nav .nav-join {
   font-weight: 600;
 }
 nav.site-nav .nav-join:hover { background: #d8b25f; }
-.sidenav { background-color: var(--green-dark); }
+.sidenav { background-color: #34410f; } /* solid dark green */
 .sidenav li a {
-  color: #f2f5ec; font-family: "Oswald", sans-serif;
-  text-transform: uppercase; letter-spacing: 1px;
-  font-size: 16px;
+  color: #ffffff; font-family: "Oswald", sans-serif;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  font-size: 17px; font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,.10);
 }
-.sidenav li a:hover { background: rgba(255,255,255,.08); }
+.sidenav li a:hover,
+.sidenav li a:active { background: rgba(255,255,255,.14); color: #ffffff; }
 /* offset for fixed nav so anchor targets sit flush below it (nav is 66px tall) */
 section[id], div[id].anchor-offset { scroll-margin-top: 66px; }
 
