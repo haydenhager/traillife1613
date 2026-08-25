@@ -2,126 +2,505 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Trail Life 1613 website</title>
-  <link rel="icon" href="https://1199ks.com/wp-content/uploads/2019/12/cropped-trail-life-usa-logo-footer-32x32.png" sizes="32x32">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trail Life Troop 1613 | Christ-Centered Outdoor Adventure for Boys</title>
+  <meta name="description" content="Trail Life Troop 1613 in Olathe, Kansas — a Christ-centered, boy-focused outdoor adventure, character, and leadership program for boys in kindergarten through 12th grade. New families welcome!"/>
+  <link rel="icon" href="img/cropped-trail-life-usa-logo-footer-32x32.ico" sizes="32x32">
 
-  <!-- CSS  -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body style="background-color: #f5f7f6;">
-  <nav class=""  style="position: fixed;top: 0;background-color: #3d4e17;" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Trail Life Troop 1613</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <!-- <li><a href="./second.html">Prospects</a></li> -->
-        <!-- <li><a href="#">Program</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li> -->
-      </ul>
+<body>
 
-      <ul id="nav-mobile" style="background-color: #3d4e17;" class="sidenav">
-        <li><a href="#">Home</a></li>
-        <!-- <li><a href="#">Prospects</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li> -->
+  <!-- ============================================================ NAV -->
+  <nav class="site-nav z-depth-0" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#top" class="brand-logo">
+        <img src="img/traillife-logo.svg" alt="Trail Life Troop 1613">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#meetings">Meetings</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#connect">Contact</a></li>
+        <li><a href="#join" class="nav-join">Join Us</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#meetings">Meetings</a></li>
+        <li><a href="#awards">Advancement</a></li>
+        <li><a href="#join">How to Join</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#connect">Contact</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot trailLifeLogoSection" id="index-banner">
-    <!-- <div class="container" >
-    </div> -->
+
+  <!-- ============================================================ HERO -->
+  <div class="landing">
+  <header class="hero" id="top">
+    <div class="hero__scene" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5a6d28"/>
+            <stop offset="1" stop-color="#3d4e17"/>
+          </linearGradient>
+        </defs>
+        <rect width="1440" height="900" fill="url(#sky)"/>
+        <circle cx="1120" cy="210" r="90" fill="#e8d9a8" opacity="0.35"/>
+        <!-- distant ridge -->
+        <path d="M0 520 L220 400 L430 500 L640 380 L880 500 L1120 390 L1440 500 L1440 900 L0 900 Z" fill="#4a5d23" opacity="0.55"/>
+        <!-- mid ridge -->
+        <path d="M0 640 L260 520 L520 620 L760 500 L1020 620 L1260 540 L1440 620 L1440 900 L0 900 Z" fill="#3d4e17" opacity="0.75"/>
+        <!-- near ridge -->
+        <path d="M0 760 L200 660 L420 740 L680 640 L920 740 L1180 660 L1440 740 L1440 900 L0 900 Z" fill="#33410f"/>
+        <!-- pine trees -->
+        <g fill="#2a3610" opacity="0.9">
+          <path d="M120 780 l26 -70 l26 70 z M126 740 l20 -48 l20 48 z"/>
+          <path d="M1290 800 l30 -84 l30 84 z M1298 752 l22 -56 l22 56 z"/>
+          <path d="M1360 800 l22 -60 l22 60 z"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container">
+      <img class="hero__logo" src="img/traillife-logo.svg" alt="Trail Life USA">
+      <p class="hero__kicker">Christ-Centered &bull; Boy-Focused &bull; Outdoor Adventure</p>
+      <h1>Trail Life Troop 1613</h1>
+      <p class="hero__sub">Raising boys of character through outdoor adventure, lasting friendships, and faith &mdash; in Olathe, Kansas. New families are always welcome.</p>
+      <div class="hero__cta">
+        <a href="#join" class="btn btn-lg btn-gold waves-effect">Join Our Troop</a>
+        <a href="#about" class="btn btn-lg btn-outline-light waves-effect">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================================================== VALUES STRIP -->
+  <div class="values-strip">
+    <div class="container">
+      <div class="row mb-0">
+        <div class="col s6 m3"><div class="val-num">K&ndash;12</div><div class="val-label">Boys Welcome</div></div>
+        <div class="col s6 m3"><div class="val-num">3</div><div class="val-label">Age Programs</div></div>
+        <div class="col s6 m3"><div class="val-num">Weekly</div><div class="val-label">Troop Meetings</div></div>
+        <div class="col s6 m3"><div class="val-num">100%</div><div class="val-label">Faith &amp; Fun</div></div>
+      </div>
+    </div>
   </div>
+  </div><!-- /.landing -->
 
 
-  <div class="container mainSectionContainer" >
-    <iframe width="100%" src="https://www.youtube.com/embed/L7zGYASqoBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4" style="color:black">
-          <div class="icon-block">
-            <h5 class="center">Adventure Awaits</h5>
-            <p class="light">Trail Life USA combines the traditional methods of the international scouting movement featuring outdoor experiences such as camping and hiking, the patrol system, development of leadership traits, community service, badge/award advancement and uniforms, all built upon the primary foundation of Christian character formation.</p>
-          </div>
+  <!-- ============================================================ ABOUT -->
+  <section class="section-pad bg-white" id="about">
+    <div class="container">
+      <div class="row" style="align-items:center;">
+        <div class="col s12 m6">
+          <span class="eyebrow">Welcome, Families</span>
+          <h2 class="section-title">What Is Trail Life?</h2>
+          <hr class="divider-rule">
+          <p>Trail Life USA is a <strong>Christ-centered, boy-focused</strong> outdoor adventure, character, and leadership program for young men from kindergarten through 12th grade. It blends the best traditions of scouting &mdash; camping, hiking, the patrol system, skill badges, and uniforms &mdash; on the foundation of Christian character formation.</p>
+          <p><strong>Boys will love the fun and adventure.</strong> Parents will love the commitment to a Christian worldview, moral consistency, and safety. Troop 1613 is chartered by <a href="https://www.newhopepca.net/" target="_blank" rel="noopener">New Hope PCA</a> and led by trained, background-checked Christian men who walk alongside your son on the trail.</p>
+          <p class="mb-0">Whether your family is brand new to Trail Life or returning for another year of adventure, we're glad you're here. Below you'll find everything you need to know to get started.</p>
         </div>
-
-        <div class="col s12 m4" style="color:black">
-          <div class="icon-block">
-            <h5 class="center">Christ-centered, Boy-focused</h5>
-            <p class="light">Trail Life USA is a Christ-centered, boy-focused outdoor adventure, character, and leadership program for young boys and men in elementary through high school.Boys will love the fun and adventure!  Parents will love the commitment to a Christian worldview and moral consistency.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m2" style="color:black">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><a href="https://www.facebook.com/groups/1201732853596380"><img  src="img/f_logo_RGB-Blue_58.png" width="75" height="75"></a></h2>
-            <h5 class="center">Follow us on Facebook</h5>
-
-            <p class="light"></p>
-          </div>
-        </div>
-        <div class="col s12 m2" style="color:black">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><a href="https://www.traillifeusa.com/program-overview"><img  src="img/trail-life-usa-logo-footer.png"width="75" height="75"></a></h2>
-            <h5 class="center">Trail Life Program Overview</h5>
-
-            <p class="light"></p>
+        <div class="col s12 m6">
+          <div class="oath-card">
+            <h4>The Trailman's Oath</h4>
+            <p class="oath-text">&ldquo;On my honor I will do my best to serve God and my country, to respect authority, to be a good steward of creation, and to treat others as I want to be treated.&rdquo;</p>
+            <div class="motto">Our Motto &mdash; Walk Worthy</div>
           </div>
         </div>
       </div>
-
     </div>
-    <br><br>
-  </div>
+  </section>
 
-  <footer class="page-footer" style="background-color: #5f7530;" >
+  <!-- ========================================================= PROGRAMS -->
+  <section class="section-pad bg-soft" id="programs">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px;">
+        <span class="eyebrow">By Age &amp; Grade</span>
+        <h2 class="section-title">Our Programs</h2>
+        <hr class="divider-rule">
+        <p class="section-lead center-block">Boys grow through three age-based programs, each with its own adventures, awards, and level of responsibility. Troop 1613 serves all three.</p>
+      </div>
+      <div class="row">
+        <!-- Woodlands -->
+        <div class="col s12 m4">
+          <div class="prog-card prog-card--wood">
+            <div class="prog-card__top">
+              <span class="prog-card__age">Ages 5&ndash;10</span>
+              <h4>Woodlands Trail</h4>
+              <div class="grades">Kindergarten &ndash; 5th Grade</div>
+            </div>
+            <div class="prog-card__body">
+              <ul>
+                <li>Hands-on outdoor experiences and hikes</li>
+                <li>Character built through seven branches: Outdoor Skills, Life Skills, Heritage, Hobbies, Values, Science &amp; Tech, and Sports &amp; Fitness</li>
+                <li>Earn colorful branch pins along the way</li>
+              </ul>
+              <div class="prog-card__award"><strong>Top Awards:</strong> The Forest Award &amp; the Timberline Award before moving up to Navigators.</div>
+            </div>
+          </div>
+        </div>
+        <!-- Navigators -->
+        <div class="col s12 m4">
+          <div class="prog-card prog-card--nav">
+            <div class="prog-card__top">
+              <span class="prog-card__age">Ages 11&ndash;13</span>
+              <h4>Navigators</h4>
+              <div class="grades">6th &ndash; 8th Grade</div>
+            </div>
+            <div class="prog-card__body">
+              <ul>
+                <li>Explore personal interests and deepen faith with godly male role models</li>
+                <li>Take on real leadership within the patrol</li>
+                <li>Earn Trail Badges toward advancement</li>
+              </ul>
+              <div class="prog-card__award"><strong>Focus:</strong> Understanding their values and beliefs while gaining independence and skill.</div>
+            </div>
+          </div>
+        </div>
+        <!-- Adventurers -->
+        <div class="col s12 m4">
+          <div class="prog-card prog-card--adv">
+            <div class="prog-card__top">
+              <span class="prog-card__age">Ages 14&ndash;17</span>
+              <h4>Adventurers</h4>
+              <div class="grades">9th &ndash; 12th Grade</div>
+            </div>
+            <div class="prog-card__body">
+              <ul>
+                <li>Tackle tougher challenges and high-adventure trips</li>
+                <li>Plan events and mentor younger Trailmen</li>
+                <li>Grow in wisdom and faith with Christian mentors</li>
+              </ul>
+              <div class="prog-card__award"><strong>Highest Honor:</strong> The Freedom Award &mdash; Trail Life's pinnacle achievement.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== TYPICAL MEETING -->
+  <section class="section-pad bg-white" id="expect">
+    <div class="container">
+      <div class="row" style="align-items:center;">
+        <div class="col s12 m5">
+          <span class="eyebrow">For New Families</span>
+          <h2 class="section-title">What a Meeting Looks Like</h2>
+          <hr class="divider-rule">
+          <p>Not sure what to expect? Here's the rhythm of a typical troop meeting. Every gathering mixes fellowship, skill-building, games, and faith &mdash; so boys are always learning while having a blast.</p>
+          <p class="mb-0"><strong>First time?</strong> Just come as you are. Visitors are welcome at any meeting, and a leader will greet your family and help your son jump right in.</p>
+        </div>
+        <div class="col s12 m7">
+          <ul class="timeline">
+            <li>
+              <span class="dot">1</span>
+              <h6>Opening Ceremony</h6>
+              <p>The troop gathers to present colors, recite the Trailman's Oath, and kick things off together.</p>
+            </li>
+            <li>
+              <span class="dot">2</span>
+              <h6>Announcements &amp; Devotion</h6>
+              <p>Troop-wide news about upcoming campouts and events, plus a short Biblical devotion.</p>
+            </li>
+            <li>
+              <span class="dot">3</span>
+              <h6>Patrol Breakout Activities</h6>
+              <p>Boys split into their age-based patrols to work on skills, badges, and hands-on projects.</p>
+            </li>
+            <li>
+              <span class="dot">4</span>
+              <h6>Patrol Games &amp; Fun</h6>
+              <p>Each patrol enjoys a game or challenge together &mdash; teamwork, laughs, and a lot of fun.</p>
+            </li>
+            <li>
+              <span class="dot">5</span>
+              <h6>Biblical Connection &amp; Closing</h6>
+              <p>The evening wraps with a faith connection and a closing ceremony.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= AWARDS -->
+  <section class="section-pad bg-soft" id="awards">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px;">
+        <span class="eyebrow">Advancement</span>
+        <h2 class="section-title">The Trail to Achievement</h2>
+        <hr class="divider-rule">
+        <p class="section-lead center-block">As boys grow, they advance through meaningful awards that build skill, character, and leadership &mdash; all the way to Trail Life's highest honor.</p>
+      </div>
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="award-step">
+            <i class="material-icons">emoji_events</i>
+            <h6>Branch Pins</h6>
+            <p>Woodlands Trailmen earn pins across seven branches of learning and adventure.</p>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="award-step">
+            <i class="material-icons">park</i>
+            <h6>Forest &amp; Timberline</h6>
+            <p>The top Woodlands awards, marking a boy's readiness to advance to Navigators.</p>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="award-step">
+            <i class="material-icons">military_tech</i>
+            <h6>Trail Badges</h6>
+            <p>Navigators and Adventurers earn required and elective badges as they master new skills.</p>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="award-step">
+            <i class="material-icons">star</i>
+            <h6>The Freedom Award</h6>
+            <p>Trail Life's pinnacle achievement &mdash; earned through advanced badges, service, and proven leadership.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================== MEETINGS INFO -->
+  <section class="section-pad bg-white" id="meetings">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px;">
+        <span class="eyebrow">Plan Your Visit</span>
+        <h2 class="section-title">When &amp; Where We Meet</h2>
+        <hr class="divider-rule">
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="info-card">
+            <h5><i class="material-icons">event</i> Meeting Details</h5>
+            <ul class="info-list">
+              <li><i class="material-icons">schedule</i><span><strong>When:</strong> Tuesday nights, 6:30&ndash;8:00 PM</span></li>
+              <li><i class="material-icons">place</i><span><strong>Where:</strong> New Hope PCA, 13310 S Blackbob Rd, Olathe, KS 66062</span></li>
+              <li><i class="material-icons">calendar_month</i><span><strong>Season:</strong> We meet weekly for nine months of the year, following the school calendar.</span></li>
+              <li><i class="material-icons">groups</i><span><strong>Who:</strong> Boys in grades K&ndash;12 and their families. Visitors welcome anytime!</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="info-card">
+            <h5><i class="material-icons">backpack</i> What to Bring Your First Night</h5>
+            <ul class="info-list">
+              <li><i class="material-icons">checkroom</i><span>Comfortable, weather-appropriate clothes &mdash; no uniform needed to start.</span></li>
+              <li><i class="material-icons">water_drop</i><span>A water bottle and a positive attitude.</span></li>
+              <li><i class="material-icons">edit</i><span>A parent or guardian to meet our leaders and ask questions.</span></li>
+              <li><i class="material-icons">contact_page</i><span>That's it! We'll walk you through registration and next steps in person.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== JOIN -->
+  <section class="section-pad bg-dark" id="join">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px;">
+        <span class="eyebrow" style="color:#e0c479;">Get Started</span>
+        <h2 class="section-title">How to Join Troop 1613</h2>
+        <hr class="divider-rule center-block">
+        <p class="section-lead center-block" style="color:#cdd4bf;">Joining is simple, and you can start at any point in the year. Here's how new families get connected.</p>
+      </div>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="join-step">
+            <div class="num">1</div>
+            <h6>Reach Out or Visit</h6>
+            <p>Email us or drop by a meeting or open house. Come see the troop in action &mdash; there's no obligation, and your son can join the fun right away.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="join-step">
+            <div class="num">2</div>
+            <h6>Register Online</h6>
+            <p>Complete your membership through Trail Life Connect. The national youth membership fee is <strong>$42.98/year</strong>. Troop 1613's local dues are <strong>$75 for Woodlands Trail</strong> and <strong>$125 for Freedom Trail</strong> (Navigators &amp; Adventurers). Scholarships are available if needed.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="join-step">
+            <div class="num">3</div>
+            <h6>Get Connected</h6>
+            <p>Join us for New Family Orientation, get your son's uniform and handbook, and mark your calendar for the first campout. Welcome to the trail!</p>
+          </div>
+        </div>
+      </div>
+      <div class="center" style="margin-top:36px;">
+        <a href="mailto:Troop1613@newhopepca.net" class="btn btn-lg btn-gold waves-effect">Email Us to Get Started</a>
+        <a href="https://www.traillifeconnect.com" target="_blank" rel="noopener" class="btn btn-lg btn-outline-light waves-effect">Register on Trail Life Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FAQ -->
+  <section class="section-pad bg-soft" id="faq">
+    <div class="container">
+      <div class="center" style="margin-bottom:40px;">
+        <span class="eyebrow">Common Questions</span>
+        <h2 class="section-title">Parent FAQ</h2>
+        <hr class="divider-rule center-block">
+        <p class="section-lead center-block">The questions new families ask us most. Don't see yours? <a href="mailto:Troop1613@newhopepca.net">Just ask &mdash; we're happy to help.</a></p>
+      </div>
+      <div class="row">
+        <div class="col s12 l10 offset-l1">
+          <ul class="collapsible faq-collapsible z-depth-0">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">payments</i>How much does it cost?</div>
+              <div class="collapsible-body"><p>The Trail Life USA national youth membership fee is <strong>$42.98 per year</strong>. Troop 1613's local dues are <strong>$75 for Woodlands Trail</strong> and <strong>$125 for Freedom Trail</strong> (Navigators &amp; Adventurers), which help cover activities and supplies, and we fundraise throughout the year to keep costs low. Families may also have some costs for a uniform and handbook. <strong>Scholarships are available if needed</strong> &mdash; cost should never keep a boy from joining, so please just ask.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">schedule</i>How often do you meet, and what's the time commitment?</div>
+              <div class="collapsible-body"><p>We meet on Tuesday nights from 6:30&ndash;8:00 PM for nine months of the year, following the school calendar. On top of weekly meetings, the troop offers optional campouts, service projects, and special events. Families put in as much as they're able &mdash; but the more you're involved, the more your son gets out of it.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">church</i>Do we have to be Christian to join?</div>
+              <div class="collapsible-body"><p>Trail Life's membership policy welcomes boys of any faith &mdash; or no faith at all &mdash; to participate. At the same time, Trail Life is unapologetically Christian in its values and program, and Troop 1613 is chartered by New Hope PCA. Families of all backgrounds are welcome, and everyone should expect a Christ-centered environment.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">shield</i>How do you keep boys safe?</div>
+              <div class="collapsible-body"><p>Every leader is trained and background-checked. Trail Life follows the <strong>1-2-3 Youth Protection Essentials</strong>: no one-on-one contact between an adult and a child, two-deep leadership at all activities, and the buddy system of three. Safety is built into everything we do.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">checkroom</i>Is there a uniform?</div>
+              <div class="collapsible-body"><p>There's no strict requirement for a full uniform when a boy first starts &mdash; just come in comfortable clothes. As Trailmen settle in, they'll get a uniform, and there are options at a few different price points. We'll walk you through exactly what's needed for your son's program.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">compare_arrows</i>How is Trail Life different from Scouts?</div>
+              <div class="collapsible-body"><p>Trail Life takes an unapologetically Christian stance, and youth membership is for boys only. Troops are led by trained, background-checked Christian men who invest in each boy's character and faith. The outdoor adventure, badges, and advancement will feel familiar to families who've experienced scouting &mdash; but what sets Trail Life apart is its foundation, where faith and character come first.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">family_restroom</i>Can my son join if his dad isn't in the picture?</div>
+              <div class="collapsible-body"><p>Absolutely. Whether dad is permanently or temporarily out of the picture, your son is welcome. Our leaders and troop families come alongside every boy. Moms and guardians are an important part of the troop, too.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">groups</i>What ages can join Troop 1613?</div>
+              <div class="collapsible-body"><p>We welcome boys from kindergarten through 12th grade across all three programs &mdash; Woodlands Trail (K&ndash;5), Navigators (6&ndash;8), and Adventurers (9&ndash;12). There's a place for every boy, and you can join at any time during the year.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== VIDEO -->
+  <section class="section-pad bg-white" id="video">
+    <div class="container">
+      <div class="center" style="margin-bottom:36px;">
+        <span class="eyebrow">See It in Action</span>
+        <h2 class="section-title">Life on the Trail</h2>
+        <hr class="divider-rule center-block">
+      </div>
+      <div class="row">
+        <div class="col s12 l10 offset-l1">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/L7zGYASqoBY" title="Trail Life USA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= CONNECT -->
+  <section class="section-pad bg-soft" id="connect">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px;">
+        <span class="eyebrow">Stay in Touch</span>
+        <h2 class="section-title">Connect With Us</h2>
+        <hr class="divider-rule center-block">
+        <p class="section-lead center-block">Questions, or ready to visit? Reach out any of these ways &mdash; we'd love to meet your family.</p>
+      </div>
+      <div class="row">
+        <div class="col s12 m3">
+          <a class="connect-card" href="mailto:Troop1613@newhopepca.net">
+            <i class="material-icons">email</i>
+            <h6>Email the Troop</h6>
+            <span>Troop1613@newhopepca.net</span>
+          </a>
+        </div>
+        <div class="col s12 m3">
+          <a class="connect-card" href="https://www.facebook.com/groups/1201732853596380" target="_blank" rel="noopener">
+            <img src="img/f_logo_RGB-Blue_58.png" alt="Facebook">
+            <h6>Facebook Group</h6>
+            <span>Troop 1613 community</span>
+          </a>
+        </div>
+        <div class="col s12 m3">
+          <a class="connect-card" href="https://www.traillifeconnect.com" target="_blank" rel="noopener">
+            <i class="material-icons">hub</i>
+            <h6>Trail Life Connect</h6>
+            <span>Register &amp; manage membership</span>
+          </a>
+        </div>
+        <div class="col s12 m3">
+          <a class="connect-card" href="https://www.traillifeusa.com/program-overview" target="_blank" rel="noopener">
+            <img src="img/trail-life-usa-logo-footer.png" alt="Trail Life USA">
+            <h6>About Trail Life USA</h6>
+            <span>The national program</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== FOOTER -->
+  <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text center">1 Corinthians 16:13</h5>
-          <p class="grey-text text-lighten-4 center">Be watchful, stand firm in the faith, <br>act like men, be strong.</p>
-
-
+          <h5 class="white-text">1 Corinthians 16:13</h5>
+          <p class="grey-text text-lighten-4 verse">&ldquo;Be watchful, stand firm in the faith,<br>act like men, be strong.&rdquo;</p>
+          <p class="grey-text text-lighten-4">Trail Life Troop 1613 &mdash; chartered by New Hope PCA.</p>
         </div>
-        <!-- <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+        <div class="col l3 s12">
+          <h5 class="white-text">Explore</h5>
+          <ul class="footer-links">
+            <li><a class="white-text" href="#about">About Trail Life</a></li>
+            <li><a class="white-text" href="#programs">Our Programs</a></li>
+            <li><a class="white-text" href="#meetings">Meetings</a></li>
+            <li><a class="white-text" href="#join">How to Join</a></li>
+            <li><a class="white-text" href="#faq">Parent FAQ</a></li>
           </ul>
-        </div> -->
-        <div class="col l4 s12 center">
+        </div>
+        <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="mailto:Troop1613@newhopepca.net">Troop1613@newhopepca.net <i class="tiny material-icons">email</i></a></li>
-            <li><a class="white-text" href="https://www.traillifeconnect.com">Trail Life Connect <i class="tiny material-icons">launch</i></a></li>
-            <li><a class="white-text" href="https://www.facebook.com/groups/1201732853596380">Troop 1613 Facebook <i class="tiny material-icons">launch</i></a></li>
-            <li><a class="white-text" href="https://www.newhopepca.net/">New Hope PCA <i class="tiny material-icons">launch</i></a></li></ul>
+          <ul class="footer-links">
+            <li><a class="white-text" href="mailto:Troop1613@newhopepca.net">Email Us <i class="tiny material-icons">email</i></a></li>
+            <li><a class="white-text" href="https://www.traillifeconnect.com" target="_blank" rel="noopener">Trail Life Connect <i class="tiny material-icons">launch</i></a></li>
+            <li><a class="white-text" href="https://www.facebook.com/groups/1201732853596380" target="_blank" rel="noopener">Facebook Group <i class="tiny material-icons">launch</i></a></li>
+            <li><a class="white-text" href="https://www.newhopepca.net/" target="_blank" rel="noopener">New Hope PCA <i class="tiny material-icons">launch</i></a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="footer-copyright"style="background-color: #3d4e17">
-      <div class="container" >
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; <span id="year">2026</span> Trail Life Troop 1613. Walk Worthy.
       </div>
     </div>
   </footer>
 
-
-  <!--  Scripts-->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
-  </body>
+</body>
 </html>
