@@ -220,7 +220,7 @@ section[id], div[id].anchor-offset { scroll-margin-top: 66px; }
 /* --------------------------------------------------------- program cards */
 .prog-card {
   background: #fff; border-radius: var(--radius); overflow: hidden;
-  box-shadow: var(--shadow-sm); height: 100%;
+  box-shadow: var(--shadow-sm); height: 100%; width: 100%;
   transition: transform .18s ease, box-shadow .18s ease;
   display: flex; flex-direction: column;
 }
@@ -282,7 +282,7 @@ section[id], div[id].anchor-offset { scroll-margin-top: 66px; }
 /* ------------------------------------------------------------ award path */
 .award-step {
   background: #fff; border-radius: var(--radius); padding: 24px 22px;
-  box-shadow: var(--shadow-sm); height: 100%; text-align: center;
+  box-shadow: var(--shadow-sm); height: 100%; width: 100%; text-align: center;
   border-top: 4px solid var(--gold);
 }
 .award-step .material-icons {
@@ -296,8 +296,9 @@ section[id], div[id].anchor-offset { scroll-margin-top: 66px; }
 
 /* --------------------------------------------------------------- info box */
 .info-card {
-  background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-sm);
-  padding: 30px 30px; height: 100%;
+  background: #fff; border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(43, 51, 22, .18);
+  padding: 30px 30px; height: 100%; width: 100%;
 }
 .info-card h5 {
   font-family: "Oswald", sans-serif; text-transform: uppercase;
@@ -315,7 +316,7 @@ section[id], div[id].anchor-offset { scroll-margin-top: 66px; }
 /* join steps */
 .join-step {
   background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-sm);
-  padding: 30px 26px 26px; height: 100%; position: relative;
+  padding: 30px 26px 26px; height: 100%; width: 100%; position: relative;
 }
 .join-step .num {
   width: 46px; height: 46px; border-radius: 50%;
@@ -356,9 +357,17 @@ section[id], div[id].anchor-offset { scroll-margin-top: 66px; }
 .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 /* --------------------------------------------------------- connect cards */
-/* equal-height cards: stretch the columns via flex */
+/* equal-height cards + vertical breathing room when stacked */
+#programs .row,
+#awards .row,
+#meetings .row,
+#join .row,
 #connect .row { display: flex; flex-wrap: wrap; }
-#connect .row > [class*="col"] { display: flex; margin-bottom: 16px; }
+#programs .row > [class*="col"],
+#awards .row > [class*="col"],
+#meetings .row > [class*="col"],
+#join .row > [class*="col"],
+#connect .row > [class*="col"] { display: flex; margin-bottom: 24px; }
 .connect-card {
   display: flex; flex-direction: column; align-items: center;
   width: 100%; height: 100%;
@@ -418,4 +427,9 @@ footer .footer-links li { padding: 4px 0; }
   .hero__cta .btn-lg { display: block; width: 100%; margin: 8px 0; }
   .oath-card { padding: 26px 22px; }
   .values-strip .val-num { font-size: 2rem; }
+  /* space between text and the adjacent card/timeline when columns stack */
+  #about .oath-card { margin-top: 26px; }
+  #expect .timeline { margin-top: 24px; }
+  /* stack the How to Join buttons with breathing room */
+  #join .btn-lg { display: block; width: 100%; margin: 10px 0; }
 }
