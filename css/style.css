@@ -98,14 +98,14 @@ nav.site-nav {
 nav.site-nav .nav-wrapper { height: 66px; }
 nav.site-nav .brand-logo { display: flex; align-items: center; height: 66px; }
 nav.site-nav .brand-logo img { height: 34px; width: auto; }
-nav.site-nav ul li a {
+nav.site-nav ul.right li a {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: .92rem;
   transition: background .2s ease;
 }
-nav.site-nav ul li a:hover { background: rgba(255,255,255,.10); }
+nav.site-nav ul.right li a:hover { background: rgba(255,255,255,.10); }
 nav.site-nav .nav-join {
   background: var(--gold);
   color: #2b2410 !important;
@@ -118,8 +118,9 @@ nav.site-nav .nav-join {
 nav.site-nav .nav-join:hover { background: #d8b25f; }
 .sidenav { background-color: var(--green-dark); }
 .sidenav li a {
-  color: #e7ecdd; font-family: "Oswald", sans-serif;
+  color: #f2f5ec; font-family: "Oswald", sans-serif;
   text-transform: uppercase; letter-spacing: 1px;
+  font-size: 16px;
 }
 .sidenav li a:hover { background: rgba(255,255,255,.08); }
 /* offset for fixed nav so anchor targets sit flush below it (nav is 66px tall) */
